@@ -7,3 +7,5 @@ sh dotfilesLink.sh
 - anyenv
 
 ## ricty-diminished
+
+## .vimrc
