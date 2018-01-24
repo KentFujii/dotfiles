@@ -5,6 +5,7 @@ set clipboard=unnamedplus
 set noswapfile
 autocmd BufNewFile,BufRead *.rb setfiletype ruby
 autocmd BufNewFile,BufRead *.py setfiletype python
+autocmd vimenter * NERDTree
 
 "*****************************************************************************
 "" NeoBundle core
