@@ -1,5 +1,10 @@
+syntax on
+filetype on
 set number
 set clipboard=unnamedplus
+set noswapfile
+autocmd BufNewFile,BufRead *.rb setfiletype ruby
+autocmd BufNewFile,BufRead *.py setfiletype python
 
 "*****************************************************************************
 "" NeoBundle core
@@ -48,3 +53,4 @@ NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'scrooloose/nerdtree'
 
 call neobundle#end()
+
