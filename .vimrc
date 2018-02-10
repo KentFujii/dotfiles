@@ -3,12 +3,20 @@ filetype on
 set number
 set clipboard=unnamedplus
 set noswapfile
+set softtabstop=4
+set shortmess+=I
 autocmd BufNewFile,BufRead *.rb setfiletype ruby
+autocmd BufNewFile,BufRead *.rake setfiletype ruby
 autocmd BufNewFile,BufRead *.py setfiletype python
-autocmd vimenter * NERDTree
+let g:neocomplete#enable_at_startup = 1
+let g:ctrlp_map = '<c-t>'
+set expandtab
+set tabstop=2
+set shiftwidth=2
+let g:indentLine_color_term = 239
 
 "*****************************************************************************
-"" NeoBundle core
+"" NeoBundle
 "*****************************************************************************
 if has('vim_starting')
   set nocompatible               " Be iMproved
@@ -18,7 +26,6 @@ if has('vim_starting')
 endif
 
 let neobundle_readme=expand('~/.vim/bundle/neobundle.vim/README.md')
-let solarized_vim=expand('~/.vim/colors/solarized.vim')
 
 if !filereadable(neobundle_readme)
   echo "Installing NeoBundle..."
@@ -30,16 +37,6 @@ if !filereadable(neobundle_readme)
   " Run shell script if exist on custom select language
 endif
 
-if !filereadable(solarized_vim)
-  echo "Installing Solarized Theme..."
-  echo ""
-
-  silent !mkdir -p ~/.vim/colors
-  silent !mkdir -p ~/.vim/tmp
-  silent !git clone https://github.com/altercation/vim-colors-solarized.git ~/.vim/tmp/solarized
-  !mv ~/.vim/tmp/solarized/colors/solarized.vim ~/.vim/colors/
-endif
-
 " Required:
 call neobundle#begin(expand('~/.vim/bundle/'))
 
@@ -47,11 +44,11 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-"*****************************************************************************
-"" NeoBundle install packages
-"*****************************************************************************
-NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'Yggdroot/indentLine'
+NeoBundle 'bronson/vim-trailing-whitespace'
+NeoBundle 'airblade/vim-gitgutter'
 
 call neobundle#end()
-
