@@ -5,9 +5,16 @@ set clipboard=unnamedplus
 set noswapfile
 set softtabstop=4
 set shortmess+=I
+autocmd BufNewFile,BufRead *.sh setfiletype sh
+autocmd BufNewFile,BufRead *.js setfiletype javascript
+autocmd BufNewFile,BufRead *.json setfiletype javascript
 autocmd BufNewFile,BufRead *.rb setfiletype ruby
 autocmd BufNewFile,BufRead *.rake setfiletype ruby
 autocmd BufNewFile,BufRead *.py setfiletype python
+autocmd BufNewFile,BufRead *.yml setlocal ft=yaml
+autocmd FileType ruby setlocal commentstring=#\ %s
+autocmd FileType python setlocal commentstring=#\ %s
+autocmd FileType yaml setlocal commentstring=#\ %s
 let g:neocomplete#enable_at_startup = 1
 let g:ctrlp_map = '<c-t>'
 set expandtab
@@ -50,5 +57,6 @@ NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'tpope/vim-commentary'
 
 call neobundle#end()
