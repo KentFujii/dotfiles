@@ -18,6 +18,7 @@ autocmd FileType python setlocal commentstring=#\ %s
 autocmd FileType go setlocal commentstring=//\ %s
 autocmd FileType yaml setlocal commentstring=#\ %s
 let g:neocomplete#enable_at_startup = 1
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 let g:ctrlp_map = '<c-t>'
 set expandtab
 set tabstop=2
