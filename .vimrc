@@ -5,6 +5,7 @@ set clipboard=unnamedplus
 set noswapfile
 set shortmess+=I
 set expandtab
+set autoindent
 
 autocmd BufNewFile,BufRead *.sh setfiletype sh
 autocmd BufNewFile,BufRead *.js setfiletype javascript
