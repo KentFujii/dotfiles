@@ -3,8 +3,9 @@ filetype on
 set number
 set clipboard=unnamedplus
 set noswapfile
-set softtabstop=4
 set shortmess+=I
+set expandtab
+
 autocmd BufNewFile,BufRead *.sh setfiletype sh
 autocmd BufNewFile,BufRead *.js setfiletype javascript
 autocmd BufNewFile,BufRead *.json setfiletype javascript
@@ -12,17 +13,16 @@ autocmd BufNewFile,BufRead *.rb setfiletype ruby
 autocmd BufNewFile,BufRead *.rake setfiletype ruby
 autocmd BufNewFile,BufRead *.py setfiletype python
 autocmd BufNewFile,BufRead *.go setfiletype go
-autocmd BufNewFile,BufRead *.yml setlocal ft=yaml
-autocmd FileType ruby setlocal commentstring=#\ %s
-autocmd FileType python setlocal commentstring=#\ %s
-autocmd FileType go setlocal commentstring=//\ %s
-autocmd FileType yaml setlocal commentstring=#\ %s
+autocmd BufNewFile,BufRead *.yml setfiletype yaml
+
+autocmd FileType ruby setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
+autocmd FileType python setlocal commentstring=#\ %s softtabstop=4 shiftwidth=4
+autocmd FileType go setlocal commentstring=//\ %s softtabstop=2 shiftwidth=2
+autocmd FileType yaml setlocal commentstring=#\ %s  softtabstop=2 shiftwidth=2
+
 let g:neocomplete#enable_at_startup = 1
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 let g:ctrlp_map = '<c-t>'
-set expandtab
-set tabstop=2
-set shiftwidth=2
 let g:indentLine_color_term = 239
 
 "*****************************************************************************
