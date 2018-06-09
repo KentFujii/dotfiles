@@ -18,7 +18,7 @@ autocmd BufNewFile,BufRead *.yml setfiletype yaml
 
 autocmd FileType ruby setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
 autocmd FileType python setlocal commentstring=#\ %s softtabstop=4 shiftwidth=4
-autocmd FileType go setlocal commentstring=//\ %s softtabstop=2 shiftwidth=2
+autocmd FileType go setlocal commentstring=//\ %s softtabstop=8 shiftwidth=8 noexpandtab
 autocmd FileType yaml setlocal commentstring=#\ %s  softtabstop=2 shiftwidth=2
 
 let g:neocomplete#enable_at_startup = 1
