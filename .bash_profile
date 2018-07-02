@@ -1,9 +1,1 @@
-if [ -d $HOME/.anyenv ]
-then
-    export PATH="$HOME/.anyenv/bin:$PATH"
-    eval "$(anyenv init -)"
-fi
-
-
-export TF_CPP_MIN_LOG_LEVEL=2
-
+PS1='\[`[ $? = 0 ] && X=2 || X=1; tput setaf $X`\]\h\[`tput sgr0`\]:$PWD\n\$ '
