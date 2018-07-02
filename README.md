@@ -16,6 +16,8 @@ chmod u+x install.sh
 ./install.sh
 ```
 
+上記のコマンドをホームディレクトリで実行する必要あり
+
 ## .tmux.conf
 
 tmuxにおけるクリップボードの設定をしている
