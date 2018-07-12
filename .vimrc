@@ -1,11 +1,12 @@
 syntax on
 filetype on
 set number
-set clipboard=unnamedplus
+set clipboard=unnamed
 set noswapfile
 set shortmess+=I
 set expandtab
 set autoindent
+set backspace=indent,eol,start
 
 autocmd BufNewFile,BufRead *.sh setfiletype sh
 autocmd BufNewFile,BufRead *.js setfiletype javascript
