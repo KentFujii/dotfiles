@@ -16,6 +16,7 @@ autocmd BufNewFile,BufRead *.rake setfiletype ruby
 autocmd BufNewFile,BufRead *.py setfiletype python
 autocmd BufNewFile,BufRead *.go setfiletype go
 autocmd BufNewFile,BufRead *.yml setfiletype yaml
+autocmd BufNewFile,BufRead *.yaml setfiletype yaml
 
 autocmd FileType ruby setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
 autocmd FileType python setlocal commentstring=#\ %s softtabstop=4 shiftwidth=4
