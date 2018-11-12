@@ -11,6 +11,7 @@ set backspace=indent,eol,start
 autocmd BufNewFile,BufRead *.sh setfiletype sh
 autocmd BufNewFile,BufRead *.js setfiletype javascript
 autocmd BufNewFile,BufRead *.json setfiletype javascript
+autocmd BufNewFile,BufRead *.jsonnet setfiletype javascript
 autocmd BufNewFile,BufRead *.rb setfiletype ruby
 autocmd BufNewFile,BufRead *.rake setfiletype ruby
 autocmd BufNewFile,BufRead *.py setfiletype python
