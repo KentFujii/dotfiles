@@ -5,3 +5,6 @@ if [ -f '/Users/kent/google-cloud-sdk/path.bash.inc' ]; then . '/Users/kent/goog
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/kent/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/kent/google-cloud-sdk/completion.bash.inc'; fi
+
+# direnvを使う
+eval "$(direnv hook bash)"
