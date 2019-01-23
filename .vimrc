@@ -21,8 +21,8 @@ autocmd BufNewFile,BufRead *.yml setfiletype yaml
 autocmd BufNewFile,BufRead *.yaml setfiletype yaml
 autocmd BufNewFile,BufRead *.html setfiletype html
 autocmd BufNewFile,BufRead Dockerfile setfiletype Dockerfile
-autocmd BufNewFile,BufRead *.tf setfiletype tf
 autocmd BufNewFile,BufRead *.md setfiletype markdown
+autocmd BufNewFile,BufRead *.tf setfiletype terraform
 
 autocmd FileType sh setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
 autocmd FileType javascript setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
@@ -32,7 +32,6 @@ autocmd FileType go setlocal commentstring=//\ %s softtabstop=8 shiftwidth=8 noe
 autocmd FileType lua setlocal commentstring=--\ %s softtabstop=2 shiftwidth=2
 autocmd FileType yaml setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
 autocmd FileType Dockerfile setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
-autocmd FileType tf setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
 
 let g:neocomplete#enable_at_startup = 1
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
@@ -77,5 +76,6 @@ NeoBundle 'bronson/vim-trailing-whitespace'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'hashivim/vim-terraform'
 
 call neobundle#end()
