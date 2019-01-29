@@ -8,3 +8,6 @@ if [ -f '/Users/kent/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/ken
 
 # direnvを使う
 eval "$(direnv hook bash)"
+
+# awsコマンドを補完可能にする
+complete -C '/usr/local/bin/aws_completer' aws
