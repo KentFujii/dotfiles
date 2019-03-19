@@ -25,7 +25,7 @@ autocmd BufNewFile,BufRead *.md setfiletype markdown
 autocmd BufNewFile,BufRead *.tf setfiletype terraform
 
 autocmd FileType sh setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
-autocmd FileType javascript setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
+autocmd FileType javascript setlocal commentstring=//\ %s softtabstop=2 shiftwidth=2
 autocmd FileType ruby setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
 autocmd FileType python setlocal commentstring=#\ %s softtabstop=4 shiftwidth=4
 autocmd FileType go setlocal commentstring=//\ %s softtabstop=8 shiftwidth=8 noexpandtab
