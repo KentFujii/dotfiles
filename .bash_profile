@@ -11,3 +11,6 @@ eval "$(direnv hook bash)"
 
 # awsコマンドを補完可能にする
 complete -C '/usr/local/bin/aws_completer' aws
+
+# エイリアス
+alias fig='docker-compose'
