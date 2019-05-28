@@ -17,6 +17,7 @@ autocmd BufNewFile,BufRead *.rake setfiletype ruby
 autocmd BufNewFile,BufRead *.py setfiletype python
 autocmd BufNewFile,BufRead *.go setfiletype go
 autocmd BufNewFile,BufRead *.scala setfiletype scala
+autocmd BufNewFile,BufRead *.sbt setfiletype scala
 autocmd BufNewFile,BufRead *.lua setfiletype lua
 autocmd BufNewFile,BufRead *.yml setfiletype yaml
 autocmd BufNewFile,BufRead *.dig setfiletype yaml
