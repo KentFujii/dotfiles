@@ -23,7 +23,9 @@ autocmd BufNewFile,BufRead *.yml setfiletype yaml
 autocmd BufNewFile,BufRead *.dig setfiletype yaml
 autocmd BufNewFile,BufRead *.yaml setfiletype yaml
 autocmd BufNewFile,BufRead *.html setfiletype html
+autocmd BufNewFile,BufRead *.xml setfiletype xml
 autocmd BufNewFile,BufRead *.conf setfiletype config
+autocmd BufNewFile,BufRead Dockerfile.* setfiletype Dockerfile
 autocmd BufNewFile,BufRead Dockerfile setfiletype Dockerfile
 autocmd BufNewFile,BufRead *.md setfiletype markdown
 autocmd BufNewFile,BufRead *.tf setfiletype terraform
