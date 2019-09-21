@@ -25,6 +25,9 @@ autocmd BufNewFile,BufRead *.yaml setfiletype yaml
 autocmd BufNewFile,BufRead *.html setfiletype html
 autocmd BufNewFile,BufRead *.xml setfiletype xml
 autocmd BufNewFile,BufRead *.conf setfiletype config
+autocmd BufNewFile,BufRead *.cfg setfiletype config
+autocmd BufNewFile,BufRead *.ini setfiletype config
+autocmd BufNewFile,BufRead *.toml setfiletype config
 autocmd BufNewFile,BufRead Dockerfile.* setfiletype Dockerfile
 autocmd BufNewFile,BufRead Dockerfile setfiletype Dockerfile
 autocmd BufNewFile,BufRead *.md setfiletype markdown
@@ -39,6 +42,7 @@ autocmd FileType scala setlocal commentstring=//\ %s softtabstop=2 shiftwidth=2
 autocmd FileType lua setlocal commentstring=--\ %s softtabstop=2 shiftwidth=2
 autocmd FileType yaml setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
 autocmd FileType config setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
+autocmd FileType dosini setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
 autocmd FileType Dockerfile setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
 
 let g:neocomplete#enable_at_startup = 1
