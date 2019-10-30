@@ -19,9 +19,9 @@ autocmd BufNewFile,BufRead *.go setfiletype go
 autocmd BufNewFile,BufRead *.scala setfiletype scala
 autocmd BufNewFile,BufRead *.sbt setfiletype scala
 autocmd BufNewFile,BufRead *.lua setfiletype lua
-autocmd BufNewFile,BufRead *.yml setfiletype yaml
+autocmd BufNewFile,BufRead *.yml* setfiletype yaml
 autocmd BufNewFile,BufRead *.dig setfiletype yaml
-autocmd BufNewFile,BufRead *.yaml setfiletype yaml
+autocmd BufNewFile,BufRead *.yaml* setfiletype yaml
 autocmd BufNewFile,BufRead *.html setfiletype html
 autocmd BufNewFile,BufRead *.xml setfiletype xml
 autocmd BufNewFile,BufRead *.conf setfiletype config
