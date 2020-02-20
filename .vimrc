@@ -8,6 +8,7 @@ set expandtab
 set autoindent
 set backspace=indent,eol,start
 set redrawtime=5000
+set tags=./tags;$HOME
 
 autocmd BufNewFile,BufRead *.sh setfiletype sh
 autocmd BufNewFile,BufRead *.js setfiletype javascript
