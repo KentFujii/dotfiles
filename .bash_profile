@@ -6,11 +6,9 @@ if [ -f '/Users/kent/google-cloud-sdk/path.bash.inc' ]; then . '/Users/kent/goog
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/kent/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/kent/google-cloud-sdk/completion.bash.inc'; fi
 
-# use direnv
-eval "$(direnv hook bash)"
-
 # autocomplete for aws cli
 complete -C '/usr/local/bin/aws_completer' aws
 
 # alias
 alias fig='docker-compose'
+export BASH_SILENCE_DEPRECATION_WARNING=1
