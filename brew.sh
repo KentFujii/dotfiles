@@ -4,3 +4,7 @@ brew install reattach-to-user-namespace
 brew install mycli
 brew install pgcli
 brew install jq
+brew install jid
+brew install peco
+brew install pt
+brew install csvkit
