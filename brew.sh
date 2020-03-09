@@ -1,6 +1,8 @@
 brew install vim
 brew install tmux
 brew install reattach-to-user-namespace
+brew install cmatrix
+brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 brew install mycli
 brew install pgcli
 brew install jq
