@@ -1,10 +1,14 @@
 # dotfiles
 
-sh dotfilesLink.sh
+./run.sh
 
 ## .bash_profile
 
 settings for bash
+
+## .Brewfile
+
+settings for cli
 
 ## .vimrc
 
