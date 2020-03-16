@@ -7,4 +7,5 @@ ln -sf ~/work/dotfiles/.ctags ~/.ctags
 ln -sf ~/work/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/work/dotfiles/.gitignore_global ~/.gitignore_global
 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew bundle --global
