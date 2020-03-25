@@ -4,6 +4,7 @@ brew "reattach-to-user-namespace"
 brew "cmatrix"
 brew "universal-ctags/universal-ctags/universal-ctags", args: ['HEAD']
 brew "github/gh/gh"
+brew "newrelic-cli"
 brew "circleci"
 brew "ansible"
 brew "terraform"
