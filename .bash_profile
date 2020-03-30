@@ -11,6 +11,7 @@ complete -C '/usr/local/bin/aws_completer' aws
 
 # alias
 alias fig='docker-compose'
-export BASH_SILENCE_DEPRECATION_WARNING=1
 
+# env
 export BASH_SILENCE_DEPRECATION_WARNING=1
+export EDITOR=vim
