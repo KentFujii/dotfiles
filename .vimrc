@@ -92,5 +92,6 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'tpope/vim-commentary'
 NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'hashivim/vim-terraform'
+NeoBundle 'editorconfig/editorconfig-vim'
 
 call neobundle#end()
