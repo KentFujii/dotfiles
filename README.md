@@ -1,6 +1,10 @@
 # dotfiles
 
+Setup Kent's macos env
+
+```
 ./run.sh
+```
 
 ## .bash_profile
 
