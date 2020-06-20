@@ -47,6 +47,7 @@ autocmd FileType yaml setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
 autocmd FileType config setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
 autocmd FileType dosini setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
 autocmd FileType Dockerfile setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
+autocmd FileType terraform setlocal commentstring=#\ %s softtabstop=2 shiftwidth=2
 
 let g:neocomplete#enable_at_startup = 1
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
