@@ -15,3 +15,6 @@ alias fig='docker-compose'
 # env
 export BASH_SILENCE_DEPRECATION_WARNING=1
 export EDITOR=vim
+
+export JAVA_HOME=`/usr/libexec/java_home -v "11"`
+PATH=${JAVA_HOME}/bin:${PATH}
