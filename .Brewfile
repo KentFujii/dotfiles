@@ -1,4 +1,8 @@
 brew "git"
+brew "ruby"
+brew "python"
+brew "scala"
+brew "go"
 brew "vim"
 brew "tmux"
 brew "reattach-to-user-namespace"
