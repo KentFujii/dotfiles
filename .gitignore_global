@@ -1,4 +1,5 @@
 .idea
+*.iml
 .envrc
 .DS_Store
 tags
