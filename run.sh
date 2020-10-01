@@ -13,6 +13,6 @@ ln -sf ~/work/dotfiles/.gitignore_global ~/.gitignore_global
 # Install package manager
 # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 # Install basic apps
-brew bundle --global
+# brew bundle --global
 # Provisioning
-ansible-playbook playbook.yml
+# ansible-playbook playbook.yml
