@@ -3,3 +3,5 @@
         email = kent.where.the.light.is@gmail.com
 [core]
         excludesfile = /Users/kent/.gitignore_global
+[pull]
+	rebase = false
